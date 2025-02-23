@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Suggestions - InfoFusion</title>
+    <link rel="stylesheet" href="styles/design-suggestions.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Design Suggestions</h2>
+    <p>If you have ideas on how we can improve our website's design, please fill out the form below. Your feedback is invaluable!</p>
+    <form id="designSuggestionForm" action="submit_design_suggestion.php" method="post">
+        <textarea name="suggestion" placeholder="Your design suggestion here..." required></textarea>
+        <button type="submit">Submit Suggestion</button>
+        <div class="success-message" id="successMessage">Thank you for your suggestion! We will review it shortly.</div>
+        <div class="error-message" id="errorMessage">There was an error submitting your suggestion. Please try again.</div>
+    </form>
+</div>
+
+<script>
+    document.getElementById('designSuggestionForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Simulate form submission (you can replace this with actual AJAX call)
+        const suggestion = this.suggestion.value;
+
+        if (suggestion) {
+            // Simulate a successful submission
+            document.getElementById('successMessage').style.display = 'block';
+            document.getElementById('errorMessage').style.display = 'none';
+            this.reset(); // Reset the form
+        } else {
+            // Simulate an error
+            document.getElementById('errorMessage').style.display = 'block';
+            document.getElementById('successMessage').style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>

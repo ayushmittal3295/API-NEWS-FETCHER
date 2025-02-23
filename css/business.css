@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #34495E, #5D6D7E); /* Dark Slate Gray to Steel Blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    transition: background 0.5s ease;
+}
+
+header:hover {
+    background: linear-gradient(135deg, #5D6D7E, #34495E); /* Steel Blue to Dark Slate Gray */
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    animation: fadeIn 1s ease-in-out;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+
+.articles-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+article {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px; /* Increased margin for better spacing */
+    padding: 15px; /* Increased padding for a more spacious feel */
+    width: 280px; /* Slightly reduced width for a more compact layout */
+    transition: transform 0.2s;
+    overflow: hidden; /* Prevent overflow of content */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: flex-start; /* Align items to the start */
+    height: 400px; /* Increased height for better text accommodation */
+}
+
+article:hover {
+    transform: scale(1.02); /* Slightly less aggressive scaling */
+}
+
+article img {
+    max-width: 100%;
+    border-radius: 8px;
+    height: 150px; /* Fixed height for images to maintain uniformity */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+h2 {
+    font-size: 1.4em; /* Slightly larger font size for titles */
+    margin: 10px 0;
+}
+
+p {
+    font-size: 0.9em; /* Smaller font size for descriptions */
+    color: #555;
+    height: 80px; /* Increased height for descriptions to allow more text */
+    overflow: hidden; /* Prevent overflow of text */
+    margin-bottom: 10px; /* Space between description and button */
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: auto; /* Push the button to the bottom */
+    padding: 9px 10px; /* Reduced padding for a more compact button */
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    text-align: center; /* Center the text in the button */
+    font-size: 0.85em; /* Adjusted font size for a more professional look */
+    width: 100px; /* Fixed width for consistency */
+    text-align: center; /* Center the text */
+}
+
+.read-more:hover {
+    background: #0056b3;
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(135deg, #2C3E50, #34495E); /* Dark Slate Blue to Darker Slate Blue */
+    color: white;
+    text-align: center;
+    padding: 20px; /* Increased padding for better spacing */
+    position: relative;
+    transition: background 0.5s ease;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+footer:hover {
+    background: linear-gradient(135deg, #34495E, #2C3E50); /* Darker Slate Blue to Dark Slate Blue */
+}
+
+.footer-section {
+    margin: 10px 0; /* Add some margin between sections */
+}
+
+footer span {
+    display: block; /* Make each span take a full line */
+    animation: fadeIn 1s ease-in-out;
+    font-size: 1em; /* Set a base font size */
+}
+
+footer span:hover {
+    color: #3498DB; /* Change color on hover to a lighter blue */
+}
+
+/* Additional Footer Links */
+footer a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 10px; /* Space between links */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+footer a:hover {
+    color: #FFD700; /* Change link color on hover to Gold */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    footer {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    footer span {
+        font-size: 0.9em; /* Adjust font size for smaller screens */
+    }
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrections or Updates - InfoFusion</title>
+    <link rel="stylesheet" href="styles/corrections.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Corrections or Updates</h2>
+    <p>If you find any outdated or incorrect information, please fill out the form below to let us know. Your input helps us maintain the quality of our content!</p>
+    <form id="correctionForm" action="submit_correction.php" method="post">
+        <textarea name="correction" placeholder="Your correction or update here..." required></textarea>
+        <button type="submit">Submit Correction</button>
+        <div class="success-message" id="successMessage">Thank you for your input! We will review it shortly.</div>
+        <div class="error-message" id="errorMessage">There was an error submitting your correction. Please try again.</div>
+    </form>
+</div>
+
+<script>
+    document.getElementById('correctionForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Simulate form submission (you can replace this with actual AJAX call)
+        const correction = this.correction.value;
+
+        if (correction) {
+            // Simulate a successful submission
+            document.getElementById('successMessage').style.display = 'block';
+            document.getElementById('errorMessage').style.display = 'none';
+            this.reset(); // Reset the form
+        } else {
+            // Simulate an error
+            document.getElementById('errorMessage').style.display = 'block';
+            document.getElementById('successMessage').style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>
