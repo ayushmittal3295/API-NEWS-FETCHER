@@ -1,13 +1,13 @@
-// Function to fetch business news data from an API
+// Function to fetch business news data from your backend API
 async function fetchBusinessNews() {
-    const apiUrl = 'https://newsapi.org/v2/top-headlines?category=business&apiKey=eb6a4b5917164b08a06ae5868354b814'; 
+    const backendApiUrl = 'http://localhost:3000/api/news/business'; // Your backend API endpoint
     try {
-        const response = await fetch(apiUrl);
+        const response = await fetch(backendApiUrl);
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
         }
         const data = await response.json();
-        displayBusinessNews(data.articles);
+        displayBusinessNews(data); // Display the news articles
     } catch (error) {
         console.error('There has been a problem with your fetch operation:', error);
     }
@@ -16,7 +16,7 @@ async function fetchBusinessNews() {
 // Function to display business news articles
 function displayBusinessNews(articles) {
     const businessContainer = document.getElementById('business-articles'); 
-    businessContainer.innerHTML = ''; 
+    businessContainer.innerHTML = ''; // Clear previous content
 
     articles.forEach(article => {
         const articleElement = document.createElement('article');

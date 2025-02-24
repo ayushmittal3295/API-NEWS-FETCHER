@@ -1,13 +1,13 @@
-// Function to fetch sports news data from an API
+// Function to fetch sports news data from your backend API
 async function fetchSportsNews() {
-    const apiUrl = 'https://newsapi.org/v2/top-headlines?category=sports&apiKey=eb6a4b5917164b08a06ae5868354b814';
+    const backendApiUrl = 'http://localhost:3000/api/news/sports'; // Your backend API endpoint
     try {
-        const response = await fetch(apiUrl);
+        const response = await fetch(backendApiUrl);
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
         }
         const data = await response.json();
-        displaySportsNews(data.articles);
+        displaySportsNews(data); // Display the news articles
     } catch (error) {
         console.error('There has been a problem with your fetch operation:', error);
     }
