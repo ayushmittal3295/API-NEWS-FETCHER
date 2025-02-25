@@ -29,29 +29,24 @@ Welcome to the News Website repository! This project is a dynamic news platform 
 
 ```plaintext
 apinewsfetcher/
-├── src/
-│   ├── main/
-│   │   ├── java/
-│   │   │   └── com/
-│   │   │       └── onlinevoting/
-│   │   │           ├── dao/
-│   │   │           ├── model/
-│   │   │           ├── service/
-│   │   │           └── servlet/
-│   │   ├── resources/
-│   │   ├── webapp/
-│   │       ├── WEB-INF/
-│   │       │   └── web.xml
-│   │       ├── css/
-│   |       ├── js/
-│   │       └── jsp/
-│   └── test/
-│       ├── java/
-│       │   └── com/
-│       │       └── onlinevoting/
-│       │           └── test/
-│       └── resources/
-└── pom.xml
+│
+├── images/                  # Static files (CSS, JS, images)
+│   ├── image1.jpg/
+│   ├── image2.jpg/
+│   └── image3.jpg/
+|
+│
+├── views/                   # HTML templates
+│   ├── index.html
+│   ├── politics.html
+│   ├── sports.html
+│   ├── entertainment.html
+│   └── business.html
+│
+├── server.js                # Main server file
+├── package.json             # Project dependencies
+├── .env                     # Environment variables
+└── README.md                # Project documentation
 ```
 
 
