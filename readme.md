@@ -9,8 +9,6 @@ The InfoFusion news website developed using Html, Css, Javascript, Nodejs. This 
 - [Project Structure](#project-structure)
 - [Setup Instructions](#setup-instructions)
 - [Features](#features)
-- [How to Use](#how-to-use)
-- [Testing](#testing)
 - [Contributing](#contributing)
 
 ## Introduction
@@ -19,10 +17,11 @@ Welcome to the News Website repository! This project is a dynamic news platform 
 
 ## Technologies Used
 
-**Backend:** Node.js
-**API:** News API (or any other news API)
-**Frontend**: HTML, CSS, JavaScript (optional, if you have a frontend)
-**Package Manager:** npm
+- **Node.js:** Backend server to handle API requests and serve the application.
+- **Express.js:** Web framework for Node.js to simplify server creation.
+- **News API:** External API to fetch the latest news articles.
+- **HTML/CSS:** Frontend structure and styling.
+- **JavaScript:** Client-side interactivity and dynamic content updates.
 
 ## Project Structure
 
@@ -55,97 +54,38 @@ apinewsfetcher/
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/ayushmittal3295/Online-Voting-System.git
+   git clone https://github.com/yourusername/infofusion-news-website.git
    ```
    
-2. **Set up the development environment:**
+2. **Install Dependencies:**
 
-   - Install JDK (Java Development Kit)
-   - Set up your IDE (Eclipse, IntelliJ, etc.)
-   - Install Apache Tomcat server
+   ```bash
+   npm install
+   ```
 
-3. **Configure the database:**
+3. **Set Up Environment Variables:**
+   - Create a .env file in the root directory and add your News API key:
+   ```bash
+   NEWS_API_KEY=your_api_key_here
+   ```
 
-   - Install MySQL
-   - Create the database and tables using the provided schema
+4. **Run the Application:**
 
-4. **Configure the project:**
+   ```bash
+   node server.js
+   ```
 
-   - Update the `src/main/resources/db.properties` file with your database credentials
+5. **Access the Website:**
 
-5. **Build and deploy the project:**
-
-   - Use Maven to build the project
-   - Deploy the WAR file to the Tomcat server from the webapps directory.
+   - Open your browser and navigate to http://localhost:3000.
 
 ## Features
 
-### Review 1
+- **Multi-Category News:** Fetch and display news from Politics, Sports, Entertainment, and Business.
+- **Real-Time Updates:** News is fetched in real-time from a reliable API.
+- **Responsive Design:** The website is fully responsive and works seamlessly on all devices.
+- **Easy to Use:** Simple and intuitive user interface for easy navigation.
 
-- **Project Setup:**
-  - Create a new project with JDK setup
-  - Define the project structure
-  - Design the database schema for the project
-  - Create MySQL tables
-  - Implement JDBC for database connectivity
-  - Create DAO classes for database operations
-
-### Review 2
-
-- **User Management:**
-  - Design HTML templates for user management
-  - Style HTML templates using CSS and Bootstrap
-  - Implement JavaScript for form validation and interactivity
-
-### Review 3
-
-- **Servlets and JSP Integration:**
-  - Create and configure Servlets
-  - Implement `doGet` and `doPost` methods
-  - Implement user form registration and profile using Servlets
-  - Integrate JSP with Servlets
-  - Implement JSP pages for displaying user data
-  - Use JSTL and EL in JSP pages
-
-### Review 4
-
-- **Testing and Documentation:**
-  - Create unit tests for service and DAO layers using JUnit
-  - Perform a final review of the project
-  - Prepare project documentation
-
-## How to Use
-
-1. **Register as a new user:**
-   - Go to the registration page and create an account
-
-2. **Log in:**
-   - Use your credentials to log in
-
-3. **Participate in elections:**
-   - View available elections and candidates
-   - Cast your vote
-
-4. **Admin functionalities:**
-   - Create new elections
-   - Add candidates to elections
-   - View voting results
-
-## Testing
-
-Unit tests are created using JUnit. To run the tests:
-
-1. **Navigate to the test directory:**
-
-   ```bash
-   cd src/test/java/com/Online-Voting/test
-   ```
-
-2. **Run the tests:**
-
-   ```bash
-   mvn test
-   ```
 
 ## Contributing
 
