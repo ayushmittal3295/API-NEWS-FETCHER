@@ -27,25 +27,63 @@ Welcome to the News Website repository! This project is a dynamic news platform 
 
 
 ```plaintext
-apinewsfetcher/
+api-news-fetcher/
 │
-├── images/                  # Static files (CSS, JS, images)
-│   ├── image1.jpg/
-│   ├── image2.jpg/
-│   └── image3.jpg/
-|
+├── public/                  # Static files served to the client
+│   ├── images/              # All images used in the project
+│   │   ├── image1.jpg
+│   │   ├── image2.jpg
+│   │   ├── image3.jpg
+│   │   ├── image4.jpg
+│   │   ├── image5.jpg
+│   │   ├── image6.jpg
+│   │   ├── image7.jpg
+│   │   └── image8.jpg
+│   │
+│   ├── js/                  # Client-side JavaScript files
+│   │   ├── Contact.js
+│   │   ├── fetchBusinessNews.js
+│   │   ├── fetchEntertainmentNews.js
+│   │   ├── fetchPoliticsNews.js
+│   │   ├── fetchSportsNews.js
+│   │   └── index.js
+│   │
+│   └── styles/              # All CSS files
+│       ├── business.css
+│       ├── contact.css
+│       ├── content-queries.css
+│       ├── corrections.css
+│       ├── design-suggestions.css
+│       ├── entertainment.css
+│       ├── feedback.css
+│       ├── index.css
+│       ├── politics.css
+│       ├── privacy.css
+│       ├── responsive.css
+│       ├── sports.css
+│       └── terms.css
 │
-├── views/                   # HTML templates
+├── views/                   # HTML files (templates)
+│   ├── business.html
+│   ├── contact.html
+│   ├── content-queries.html
+│   ├── corrections.html
+│   ├── design-suggestions.html
+│   ├── entertainment.html
+│   ├── feedback.html
 │   ├── index.html
 │   ├── politics.html
+│   ├── privacy.html
 │   ├── sports.html
-│   ├── entertainment.html
-│   └── business.html
+│   └── terms.html
 │
-├── server.js                # Main server file
-├── package.json             # Project dependencies
-├── .env                     # Environment variables
-└── README.md                # Project documentation
+├── node_modules/            # Node.js dependencies (auto-generated, do not edit)
+│
+├── server.js                # Main server file (entry point)
+├── package.json             # Node.js dependencies and scripts
+├── package-lock.json        # Auto-generated lock file for dependencies
+├── Readme.md                # Project documentation
+└── .gitignore               # Files and folders to ignore in Git
 ```
 
 
@@ -64,9 +102,10 @@ apinewsfetcher/
    ```
 
 3. **Set Up Environment Variables:**
-   - Create a .env file in the root directory and add your News API key:
+
+   Create a .env file in the root directory and add your News API key:
    ```bash
-   NEWS_API_KEY=your_api_key_here
+   NEWS_API_KEY=eb6a4b5917164b08a06ae5868354b814
    ```
 
 4. **Run the Application:**
