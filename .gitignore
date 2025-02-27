@@ -22,9 +22,8 @@ dist/
 build/
 out/
 
-# Ignore npm/yarn cache
+# Ignore npm cache
 .npm
-
 
 # Ignore package-lock.json 
 package-lock.json
@@ -32,10 +31,6 @@ package-lock.json
 # Ignore local development files
 .local
 *.local
-
-# Ignore coverage reports (if you have tests)
-coverage/
-.nyc_output/
 
 # Ignore temporary files
 *.swp

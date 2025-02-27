@@ -18,7 +18,6 @@ Welcome to the News Website repository! This project is a dynamic news platform 
 ## Technologies Used
 
 - **Node.js:** Backend server to handle API requests and serve the application.
-- **Express.js:** Web framework for Node.js to simplify server creation.
 - **News API:** External API to fetch the latest news articles.
 - **HTML/CSS:** Frontend structure and styling.
 - **JavaScript:** Client-side interactivity and dynamic content updates.
@@ -27,7 +26,7 @@ Welcome to the News Website repository! This project is a dynamic news platform 
 
 
 ```plaintext
-api-news-fetcher/
+API-NEWS-FETCHER/
 │
 ├── public/                  # Static files served to the client
 │   ├── images/              # All images used in the project
@@ -62,24 +61,28 @@ api-news-fetcher/
 │       ├── responsive.css
 │       ├── sports.css
 │       └── terms.css
+|
+|
 │
-├── views/                   # HTML files (templates)
-│   ├── business.html
-│   ├── contact.html
-│   ├── content-queries.html
-│   ├── corrections.html
-│   ├── design-suggestions.html
-│   ├── entertainment.html
-│   ├── feedback.html
-│   ├── index.html
-│   ├── politics.html
-│   ├── privacy.html
-│   ├── sports.html
-│   └── terms.html
+| # HTML files (templates)
+|
+|
+├── business.html               
+├── contact.html       
+├── content-queries.html  
+├── corrections.html   
+├── design-suggestions.html
+├── entertainment.html      
+├── feedback.html
+├── index.html  
+├── politics.html   
+├── privacy.html    
+├── sports.html
+├── terms.html              
 │
 ├── node_modules/            # Node.js dependencies (auto-generated, do not edit)
 │
-├── server.js                # Main server file (entry point)
+├── server.js                # Main server file (entry point)                                                 
 ├── package.json             # Node.js dependencies and scripts
 ├── package-lock.json        # Auto-generated lock file for dependencies
 ├── Readme.md                # Project documentation
@@ -92,7 +95,7 @@ api-news-fetcher/
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/infofusion-news-website.git
+   git clone https://github.com/ayushmittal3295/API-NEWS-FETCHER
    ```
    
 2. **Install Dependencies:**
@@ -116,7 +119,7 @@ api-news-fetcher/
 
 5. **Access the Website:**
 
-   - Open your browser and navigate to http://localhost:3000.
+   Open your browser and navigate to http://localhost:3000.
 
 ## Features
 
@@ -136,5 +139,3 @@ Contributions are welcome! Please follow these steps:
 4. Commit your changes (`git commit -m 'Add feature'`)
 5. Push to the branch (`git push origin feature-branch`)
 6. Open a Pull Request
-
----
